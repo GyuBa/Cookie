@@ -1,0 +1,26 @@
+
+        table{
+                border-top: 1px solid #444444;
+                border-collapse: collapse;
+        }
+        tr{
+                border-bottom: 1px solid #444444;
+                padding: 10px;
+        }
+        td{
+                border-bottom: 1px solid #efefef;
+                padding: 10px;
+        }
+        table .even{
+                background: #efefef;
+        }
+        .text{
+                text-align:center;
+                padding-top:20px;
+                color:#000000
+        }
+        .text:hover{
+                text-decoration: underline;
+        }
+        a:link {color : #57A0EE; text-decoration:none;}
+        a:hover { text-decoration : underline;}
