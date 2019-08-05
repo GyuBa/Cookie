@@ -13,7 +13,7 @@ $row = mysqli_fetch_array($result)
     border:1px dashed #444444;
   }
   .text {
-    
+
   }
 </style>
 <!DOCTYPE html>
@@ -26,11 +26,7 @@ $row = mysqli_fetch_array($result)
     <h2 align="center">과자 설명</h2>
     <p style="border-top:1px solid #444444">
       <h4 align = "center">
-      <?php
-      if($row['image'] != NULL){
-        echo '<img src = "'.$row['image'].'"/><br>';
-      }
-      echo $row['description'];
+      <?=$row['description'];
        ?>
      </h4>
       <!--간략 소개-->

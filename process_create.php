@@ -3,16 +3,7 @@ $conn = mysqli_connect("localhost", "root", "simguejae1010", "SNACK");
 if($conn == FALSE){
   echo "오류 1";
 }
-/*
-$selectSql = "SELECT * FROM cookie";
-$selectResult = mysqli_query($conn, $selectSql);
-$row = mysqli_fetch_array($selectResult);
 
-while($row == false){
-
-}
-$lastRow = $row['id'] + 1.".jpg";*/
-//$sql = "INSERT INTO cookie (name, price, description, image) VALUES('{$_POST['name']}', {$_POST['price']}, '{$_POST['description']}', '{$lastRow}')";
 $sql = "INSERT INTO cookie (name, price, description) VALUES('{$_POST['name']}', {$_POST['price']}, '{$_POST['description']}')";
 $result = mysqli_query($conn, $sql);
 
